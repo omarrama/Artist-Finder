@@ -230,3 +230,48 @@ button {
 .photos img {
   width: 270px;
 }
+
+/* CREDENTIALS */
+
+.creds {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35px 0px;
+  border-bottom: 1px solid #dfe1e7;
+}
+
+.seen {
+  font-size: 20px;
+  font-weight: 500;
+  color: #9a9c9ea6;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.seen::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(95, 94, 97, 0.233);
+  transition: all 0.4s;
+}
+
+.seen:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.creds > img {
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 400ms;
+}
+
+.creds > img:hover {
+  filter: brightness(10%);
+}
