@@ -18,7 +18,59 @@ body {
   background-color: #EEEFF3;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .bg {
   position: absolute;
   z-index: -999;
+}
+
+
+/* HEADER */
+
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav {
+
+}
+
+.links {
+  display: flex;
+  column-gap: 40px;
+}
+
+.link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 400ms;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.link--btn {
+
 }
