@@ -137,7 +137,6 @@ button {
 
 .main {
   animation: fade-in 400ms 0.1s backwards;
-  height: 900px;
   background: #fff;
   border-radius: 5px;
   margin-bottom: 24px;
@@ -274,4 +273,108 @@ button {
 
 .creds > img:hover {
   filter: brightness(10%);
+}
+
+/* 'How' Section */
+
+.how {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 60px;
+}
+
+.second-heading {
+  position: relative;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: capitalize;
+  transition: all 300ms;
+}
+
+.second-heading:hover {
+  color: var(--accent-color-dark);
+}
+
+.second-heading::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accent-color);
+  height: 3px;
+  width: 60px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 0px;
+}
+
+.step {
+  max-width: 220px;
+  text-align: center;
+}
+
+.step-icon {
+  width: 55px;
+  height: 55px;
+  background-color: black;
+  border-radius: 5000px;
+  color: white;
+  line-height: 55px !important;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.step:nth-child(1) .step-icon {
+  background-color: #fdf6de;
+  color: #f5ca36;
+}
+
+.step:nth-child(2) .step-icon {
+  background-color: #ffdeec;
+  color: #da196a;
+}
+
+.step:nth-child(3) .step-icon {
+  background-color: #e9e5ff;
+  color: #4d31e4;
+}
+
+.third-heading {
+  font-size: 23px;
+  color: #3d4048;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #74777d;
+  font-size: 18px;
+}
+
+.more {
+  color: var(--accent-color);
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--accent-color);
+  transition: all 0.2s;
+}
+
+.more:hover {
+  color: var(--accent-color-dark);
+}
+
+.more-icon {
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.more:hover .more-icon {
+  transform: translateX(3px);
 }
