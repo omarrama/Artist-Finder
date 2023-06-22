@@ -32,10 +32,22 @@ a {
   z-index: -999;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* HEADER */
 
 .header {
+  animation: fade-in 400ms;
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
