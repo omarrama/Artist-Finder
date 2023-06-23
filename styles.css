@@ -295,6 +295,7 @@ button {
 
 .second-heading:hover {
   color: var(--accent-color-dark);
+  cursor: default;
 }
 
 .second-heading::after {
@@ -377,4 +378,26 @@ button {
 
 .more:hover .more-icon {
   transform: translateX(3px);
+}
+
+/* FOOTER */
+
+.footer {
+  color: rgb(75, 72, 72);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  padding-bottom: 24px;
+}
+
+.legal-list {
+  display: flex;
+  column-gap: 12px;
+}
+
+.legal-link {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
